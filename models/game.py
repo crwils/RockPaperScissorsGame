@@ -10,7 +10,6 @@ class Game:
 valid_gestures = ["rock", "paper", "scissors"]
 
 def play_game(game):
-    valid_gestures = ["rock", "paper", "scissors"]
     if (game.player1.gesture not in valid_gestures) or (game.player2.gesture not in valid_gestures):
         return f"Invalid entry!"
     elif (game.player1.gesture == "rock" and game.player2.gesture == "scissors") or (game.player1.gesture == "paper" and game.player2.gesture == "rock") or (game.player1.gesture == "scissors" and game.player2.gesture == "paper"):
@@ -19,4 +18,5 @@ def play_game(game):
         return f"Result: {game.player2.name} wins by playing {game.player2.gesture}!"
     else:
         if game.player1.gesture == game.player2.gesture:
-            return None
+            #return None
+            return "It's a draw! Go again. "

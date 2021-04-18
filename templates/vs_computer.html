@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+
+<form action="/vs_computer" method="POST">
+    <label for="name1">Player 1 Name:</label>
+    <input type="text" name="name1"><br><br>
+    <!-- <label for="name2">Player 2 Name</label>
+    <input type="text" name="name2"><br><br> -->
+    <label for="gesture1">Player 1 Gesture:</label>
+    <input type="text" name="gesture1"><br><br>
+    <!-- <label for="gesture2">Player 2 Gesture</label>
+    <input type="text" name="gesture2"><br><br> -->
+    <input type="submit" value="Play Now">
+</form>
+    <br>
+
+{% endblock %}

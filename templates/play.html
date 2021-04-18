@@ -2,20 +2,11 @@
 
 {% block content %}
 
+<b>Select game mode:</b><br><br>
+1. <a href="/vs_friend">Play against a friend</a>
+<br>
+<br>
+2. <a href="/vs_computer">Play against the computer</a>
 
-<form action="/play" method="POST">
-    <label for="name1">Player 1 Name</label>
-    <input type="text" name="name1"><br><br>
-    <label for="name2">Player 2 Name</label>
-    <input type="text" name="name2"><br><br>
-    <label for="gesture1">Player 1 Gesture</label>
-    <input type="text" name="gesture1"><br><br>
-    <label for="gesture2">Player 2 Gesture</label>
-    <input type="text" name="gesture2"><br><br>
-    <input type="submit" value="Play Now">
-</form>
-    <br>
-    <b>Result:</b><br>
-    {{ play2 }} 
 
 {% endblock %}

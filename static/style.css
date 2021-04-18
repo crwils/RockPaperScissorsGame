@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 30;
+    text-align: center;
+}
+
+header {
+    background-color: white;
+    padding:10px;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #000000;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#nav_links {
+    display: flex;
+    justify-content: center;
+    color: transparent;
+}
+
+.body {
+    padding: 10px;
+}
+
+#play_page {
+    text-align: center;
+}
+
+a {
+    color:#00D166;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+
+#intro_bullets {
+    color: #00D166;
+}
+
+#play_button {
+    padding: 20px;
+    font-size:xx-large;
+    font-weight: bolder;
+  }

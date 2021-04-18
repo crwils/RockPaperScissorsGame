@@ -2,18 +2,34 @@
 
 {% block content %}
 
-
-<form action="/vs_computer" method="POST">
-    <label for="name1">Player 1 Name:</label>
-    <input type="text" name="name1"><br><br>
-    <!-- <label for="name2">Player 2 Name</label>
-    <input type="text" name="name2"><br><br> -->
-    <label for="gesture1">Player 1 Gesture:</label>
-    <input type="text" name="gesture1"><br><br>
-    <!-- <label for="gesture2">Player 2 Gesture</label>
-    <input type="text" name="gesture2"><br><br> -->
-    <input type="submit" value="Play Now">
-</form>
+<body>
     <br>
+    <u><b>Instructions:</b></u><br><br>
+    <div style="color: #00D166;">
+        1. Enter your name then select your gesture from the drop-down list.
+        <br>
+        <br>
+        2. Press 'Play Now' To See Who Wins!
+    </div>
+    <br>
+    <hr>
+    <br>
+    <form action="/vs_computer" method="POST">
+        <label for="name1">Player Name:</label>
+        <input type="text" name="name1"><br><br>
+        <label for="gesture1">Choose Gesture: </label>
+        <select name="gesture1" id="gesture1">
+            <option value="select">select one</option>
+            <option value="rock">Rock</option>
+            <option value="paper">Paper</option>
+            <option value="scissors">Scissors</option>
+        </select><br><br>
+        <input type="submit" value="Play Now">
+        <br><br>
+        <hr>
+    </form>
+ 
+    <br> <br>
 
+</body>
 {% endblock %}

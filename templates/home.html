@@ -2,15 +2,27 @@
 
 {% block content %}
 
-Welcome to Rock,  Paper,  Scissors!
-<br><br>
-Rock Paper Scissors (RPS) is a hand game usually played between two people, in which each player simultaneously forms one of three gestures with an outstretched hand. <br> 
-<br>
-These gestures are "Rock", "Paper", and "Scissors".
-<br><br>
-<li>Rock beats Scissors</li>
-<li>Scissors beats Paper</li>
-<li>Paper beats Rock</li>
-<br>
-<a href="/play">Play Now!</a>
+<body>
+    <div>
+        <br>
+        <b><u>Welcome to Rock, Paper, Scissors!</u></b>
+        <br><br>
+        <div style="color: #00D166;">
+            Rock Paper Scissors (RPS) is a hand game usually played between two people. <br><br>
+            Each player simultaneously forms one of three gestures with an outstretched hand. <br>
+            <br>
+            These gestures are "Rock", "Paper", and "Scissors".
+            <br><br>
+        </div>
+    </div>
+
+    <div>
+        <br>
+        <button id="play_button">
+            <a href="/play">Play Now!</a>
+        </button>
+    </div>
+
+</body>
+
 {% endblock %}
